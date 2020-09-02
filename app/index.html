@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec9469cb83.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+     <title>The Muse</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg">
+      <div class="container mx-auto">
+          <a href="#" class="navbar-brand">THE MUSE</a>
+          <i class="fas fa-fire candle-icon"></i>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a href="#main" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-sec" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#footer" class="nav-link">Contact</a>
+                </li>
+              </ul>
+          </div>
+  </nav>
+  <section id="main">
+      <div id="Carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#Carousel" data-slide-to="1"></li>
+              <li data-target="#Carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner mx-auto">
+              <div class="carousel-item carousel-image-1 carousel-image-left active">
+                  <img ng-src="https://cdn.accentuate.io/2530312212/11765194260583/eacpist-v1583094427377.jpg?1920x615"/>
+                  <div class="container">
+                      <div class="carousel-caption d-none d-sm-block text-left">
+                          <h1 class="display-3 title-color"><ins>LIVE</ins></h1>
+                          <a href="#" class="btn btn-color slide-btn btn-lg"></a> 
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-image-2">
+                  <img ng-src="https://cdn.accentuate.io/158262362215/11632964665447/intro-v1579012160015.jpg?1920x614" />
+                  <div class="container">
+                      <div class="carousel-caption d-none d-sm-block text-left">
+                          <h1 class="display-3 title-color"><ins>SMELL</ins></h1>
+                          <a href="#" class="btn btn-color slide-btn btn-lg"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item carousel-image-3">
+                  <img ng-src="https://cdn.accentuate.io/82961006695/11765194260583/bestsellers-v1583441424494.jpg?1920x615" />
+                  <div class="container">
+                      <div class="carousel-caption d-none d-sm-block text-left">
+                          <h1 class="display-3 title-color"><ins>LAUGH</ins></h1>
+                          <a href="#" class="btn btn-color slide-btn btn-lg"></a>
+                      </div>
+                  </div>
+              </div>
+              <a href="#Carousel" data-slide="prev" class="carousel-control-prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a href="#Carousel" data-slide="next" class="carousel-control-next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+      </div>
+  </section>
+  <section id="services">
+      <div class="container mx-auto">
+          <div class="row">
+                <div class="col-10 col-md-6 col-lg-4 my-3">
+                    <span class="service-icon">
+                        <i class="fas fa-globe fa-2x"></i>
+                    </span>
+                    <h5 class="font-weight-bold text-uppercase">Worldwide Shipping</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                </div>
+                <div class="col-10 col-md-6 col-lg-4 my-3">
+                    <span class="service-icon">
+                        <i class="fas fa-stamp fa-2x"></i>
+                    </span>
+                    <h5 class="font-weight-bold text-uppercase">Certified by X</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                </div>
+                <div class="col-10 col-md-6 col-lg-4 my-3">
+                    <span class="service-icon">
+                        <i class="fas fa-money-check-alt fa-2x"></i>
+                    </span>
+                    <h5 class="font-weight-bold text-uppercase">20 Days Money Back</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                </div>
+            </div>   
+          </div>
+      </div>
+  </section>
+<div ng-controller="myAppController">
+    <hr>
+    <section id="products">
+        <div class="container mx-auto">
+              <div class="col-10 col-sm-6 mx-auto text-center">
+                  <h1 class="text-capitalize product-title">Products</h1>
+              </div>
+          <div >
+              <div class="row justify-content-around">
+                  <div ng-repeat="item in items " class="col-4 col-md-offset-3 mx-auto my-3">
+                      <div class="img-container">
+                          <img ng-src= "{{item.url}}" class="img-top">
+                      </div>
+                      <div class="card-body">
+                          <div class="card-text d-flex justify-content-between text-capitalize">
+                              <h5 id="item-name">{{item.name}}</h5>
+                              <span class="color" ng-style="{color:item.color}">{{item.color}}</span>
+                              <span><i class="fas fa fa-dollar-sign"></i>{{item.price}}</span>
+                              <a href="#" class="remove" ng-click="removeItem(item)">
+                                  <i class="fas fa-trash-alt"></i>
+                              </a>
+                              <a href="#" class="edit" ng-click="editItem(item)">
+                                  <i class="fas fa-edit"></i>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="about-sec">
+        <div class="container mx-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center">
+                    <img ng-src="https://mma.prnewswire.com/media/1222096/Room_Mists.jpg?p=publish&w=950"  width="550" height="250" class="img-fluid item-img"/>
+                </div>
+                <div class="col-lg-7 text-lg-right text-center text-color about-text">
+                    <h1>About Company</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <div class="secret-form">
+        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#secretForm"><i class="fas fa-plus fa-2x"></i></button>
+        <div id="secretForm" class="collapse in">
+            <div class="card">
+                <form>
+                    <div class="form-group text-center">
+                        <input type="file" onchange="angular.element(this).scope().getImage(this)" accept="image/*"/>
+                        <img id="item" ng-src="#" class="rounded" width="200px" height="200px"/>
+                        <input type="text" placeholder="Name" ng-model="item.name"/>
+                        <input type="text" placeholder="Color" ng-model="item.color"/>
+                        <input type="text" placeholder="Price" ng-model="item.price"/>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-light" ng-click="addItem()">Add Item</button>
+                        <button class="btn btn-light" ng-click="update()">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section id="footer">
+        <footer>
+            <div class="social-media text-center">
+                <a href="https://github.com/begumbolatt" target="_blank"><i class="fab fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/begumbolat/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="mailto:begumbolat@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                 <a href="https://twitter.com/iamabegum" target="_blank"><i class="fab fa-twitter"></i></a>
+                 <p><h7>Copyright ©themuseco2020</h7></p>
+            </div>
+        </footer>
+    </section>
+</div>
+</body>
+</html>

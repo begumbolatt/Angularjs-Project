@@ -1,0 +1,141 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.navbar-toggler{
+    outline: none!important;
+}
+.candle-icon{
+    color: rgba(255, 255, 255, 0.493);
+}
+.candle-icon:hover{
+    color:  rgb(226, 159, 155);
+}
+.bg{
+    background-color: #000;
+}
+.service-icon{
+    display: inline-block;
+    font-size: 25 px;
+    margin-bottom: 16px;
+    color: #000;
+    padding: 8px 16px;
+}
+.carousel-item{
+    height: 600px;
+}
+.title-color{
+    color: rgb(255, 255, 255);
+}
+.products{
+    background-color: #f2f2f2;
+}
+.container{
+    position: relative;
+    margin: 0 0 20px;
+}
+.img-container{
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+.img-container .img-top{
+    width: 100%;
+    height: 100%;
+}
+.img-container:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transition: 2s ease-in-out;
+}
+#about-sec{
+    margin: 25px;
+}
+.text-color{
+    color:#000;
+}
+.item-img{
+    animation-name: imgLeft;
+    animation-duration: 3s;
+}
+.about-text{
+    animation-name: text-Right;
+    animation-duration: 3s;
+}
+@keyframes imgLeft{
+    0%{
+        transform: translateX(-120px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+@keyframes text-Right{
+    0%{
+        transform: translateX(30px);
+        opacity:0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+.remove{
+    color:	#000;
+}
+.remove:hover{
+    color: 	#970202;
+}
+.edit{
+    color: 	darkslategray;
+}
+.edit:hover{
+    color: rgba(47, 79, 79, 0.596);
+}
+.skills{
+    margin:20px;
+    width: 20px;
+    height: 100%;
+    color: #f2f2f2;
+}
+hr {
+    background-color: #fff;
+    padding: 0;
+    margin: px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid #8c8c8c;
+  }
+.social-media a{ 
+    color:#000;
+    margin-right: 25px;
+    font-size: 30px;
+    transition: .2s;
+}
+.social-media a:hover{
+    color:rgb(226, 159, 155);
+}
+.btn-light{
+    background-color:rgb(226, 159, 155) !important;
+    color:rgb(255, 255, 255);
+}
+.secret-form{
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    top: 290px;
+    margin-right: 5px;
+}
+.btn-dark{
+    font-size: 10px;
+}
+.btn-dark:hover{
+    background-color:rgb(51, 51, 51) !important;
+    color:rgb(226, 159, 155);
+}
